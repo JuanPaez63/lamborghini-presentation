@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -229,14 +229,14 @@ header>*{pointer-events:auto}
 <body>
 <header>
   <img class="logo" src="logo/logo.png" alt="Lamborghini">
-  <div class="hud-t" id="hudT">Inicio</div>
+  <div class="hud-t" id="hudT">Home</div>
   <div style="display:flex;gap:10px">
-    <button class="icon-btn" id="fs" title="Pantalla completa"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+    <button class="icon-btn" id="fs" title="Fullscreen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
   </div>
 </header>
 <div id="rail"></div>
 <div class="pager"><b id="pn">01</b> / <span id="pt">07</span></div>
-<div class="hint">← → · rueda · deslizar</div>
+<div class="hint">← → · scroll · swipe</div>
 <div class="disc">Personal project by Reasoned Web. Not an official work and not affiliated with, authorized or endorsed by Automobili Lamborghini S.p.A. All trademarks belong to their respective owners. Photos via Pexels.</div>
 <div id="bar"></div>
 
@@ -244,29 +244,29 @@ header>*{pointer-events:auto}
 <main id="stage">
 
 <!-- 1 HERO -->
-<section class="slide" id="s1" data-title="Inicio">
+<section class="slide" id="s1" data-title="Home">
   <div id="hbs"></div><div class="hero-bg-dim"></div>
   <canvas id="fx"></canvas>
   <div class="hero-sub" id="heroSub" data-a style="--d:0"></div>
   <h1 class="hero-t" id="heroT" data-a style="--d:150"></h1>
   <div class="row" style="margin-top:2.4rem" data-a style="--d:400">
-    <button class="cta" onclick="go(1)">Descubrir más <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h20M14 1l6 6-6 6"/></svg></button>
+    <button class="cta" onclick="go(1)">Discover more <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h20M14 1l6 6-6 6"/></svg></button>
   </div>
-  <div class="hero-ctl" id="hctl"><button class="icon-btn" id="hp" title="Pausa"><svg viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></svg></button></div>
+  <div class="hero-ctl" id="hctl"><button class="icon-btn" id="hp" title="Pause"><svg viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></svg></button></div>
 </section>
 
 <!-- 2 HERITAGE -->
-<section class="slide" id="s2" data-title="Herencia"><div class="bgph" style="background-image:url(img/30272185.jpg)"></div>
-  <div class="eyebrow" data-a>Desde 1963 · Sant'Agata Bolognese</div>
+<section class="slide" id="s2" data-title="Heritage"><div class="bgph" style="background-image:url(img/30272185.jpg)"></div>
+  <div class="eyebrow" data-a>Since 1963 · Sant'Agata Bolognese</div>
   <div class="tl-wrap">
     <div class="year" id="year" data-y="1963" data-a="left" style="--d:100">1963</div>
     <div class="tl-info swap" id="tlInfo" data-a style="--d:250">
       <h3 id="tlName">350 GT</h3>
       <p class="lead" id="tlTxt"></p>
       <div class="mini">
-        <div><b id="tlHp">280</b><small>CV</small></div>
+        <div><b id="tlHp">280</b><small>HP</small></div>
         <div><b id="tlV">250</b><small>km/h</small></div>
-        <div><b id="tlEng">V12</b><small>Motor</small></div>
+        <div><b id="tlEng">V12</b><small>Engine</small></div>
       </div>
     </div>
   </div>
@@ -274,30 +274,30 @@ header>*{pointer-events:auto}
 </section>
 
 <!-- 3 MODELS -->
-<section class="slide" id="s3" data-title="Modelos">
+<section class="slide" id="s3" data-title="Models">
   <div style="text-align:center">
     <div class="m-tag" id="mTag" data-a></div>
     <h2 class="big m-name swap" id="mName" data-a style="--d:100">Revuelto</h2>
   </div>
   <div class="st3" id="st3" data-a="zoom" style="--d:200"></div>
-  <button class="arrow l" onclick="model(-1)" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></svg></button>
-  <button class="arrow r" onclick="model(1)" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8"/></svg></button>
+  <button class="arrow l" onclick="model(-1)" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></svg></button>
+  <button class="arrow r" onclick="model(1)" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8"/></svg></button>
   <div class="tabs" id="mTabs" data-a style="--d:300"></div>
   <div class="specs" id="mSpecs" data-a style="--d:350"></div>
-  <div class="m-cta" data-a style="--d:420"><button class="cta gold" id="mGo">Probar aceleración <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h20M14 1l6 6-6 6"/></svg></button></div>
+  <div class="m-cta" data-a style="--d:420"><button class="cta gold" id="mGo">Test acceleration <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 7h20M14 1l6 6-6 6"/></svg></button></div>
 </section>
 
 <!-- 4 LAUNCH -->
-<section class="slide" id="s4" data-title="Aceleración"><div class="bgph" style="background-image:url(img/12882894.jpg)"></div>
+<section class="slide" id="s4" data-title="Acceleration"><div class="bgph" style="background-image:url(img/12882894.jpg)"></div>
   <div class="launch">
     <div>
-      <div class="eyebrow" data-a>Prueba de aceleración</div>
+      <div class="eyebrow" data-a>Acceleration test</div>
       <h2 class="big" data-a style="font-size:clamp(50px,8vw,130px);--d:100">0–100<br><span style="color:var(--gold)">km/h</span></h2>
-      <p class="lead" data-a style="margin-top:1.4rem;--d:200">Elige un modelo y pulsa lanzar: cada uno suena con su propio motor. El cronómetro se detiene al alcanzar los 100 km/h; la aguja sigue hasta la velocidad máxima.</p>
+      <p class="lead" data-a style="margin-top:1.4rem;--d:200">Pick a model and hit launch: each one sounds like its own engine. The timer stops at 100 km/h; the needle keeps going to top speed.</p>
       <div class="pick" id="pick" data-a style="--d:300"></div>
       <div class="row" data-a style="--d:400">
-        <button class="cta gold" id="go">Lanzar ▸</button>
-        <button class="snd" id="snd">🔇 Sonido apagado</button>
+        <button class="cta gold" id="go">Launch ▸</button>
+        <button class="snd" id="snd">🔇 Sound off</button>
       </div>
     </div>
     <div class="gauge" data-a="zoom" style="--d:200">
@@ -314,17 +314,17 @@ header>*{pointer-events:auto}
 </section>
 
 <!-- 5 ENGINE -->
-<section class="slide" id="s5" data-title="Tecnología">
+<section class="slide" id="s5" data-title="Technology">
   <div class="eng">
     <div>
       <div class="eyebrow" data-a>Revuelto · HPEV</div>
-      <h2 class="big" data-a style="font-size:clamp(50px,7.4vw,120px);--d:100">V12 híbrido<br><span style="color:var(--gold)">enchufable</span></h2>
-      <p class="lead" data-a style="margin-top:1.4rem;--d:200">Un V12 de 6,5 litros y tres motores eléctricos: tracción total, vectorización de par y una entrega de potencia sin precedentes en la marca.</p>
+      <h2 class="big" data-a style="font-size:clamp(50px,7.4vw,120px);--d:100">Plug-in hybrid<br><span style="color:var(--gold)">V12</span></h2>
+      <p class="lead" data-a style="margin-top:1.4rem;--d:200">A 6.5-litre V12 and three electric motors: all-wheel drive, torque vectoring and a power delivery unlike anything the brand has done before.</p>
       <div class="stats" data-a style="--d:300">
-        <div><b><span class="count" data-to="1015">0</span></b><small>CV combinados</small></div>
-        <div><b><span class="count" data-to="9500">0</span></b><small>rpm de régimen máx.</small></div>
+        <div><b><span class="count" data-to="1015">0</span></b><small>combined HP</small></div>
+        <div><b><span class="count" data-to="9500">0</span></b><small>max rpm</small></div>
         <div><b><span class="count" data-to="2.5" data-dec="1">0</span> s</b><small>0–100 km/h</small></div>
-        <div><b>&gt;<span class="count" data-to="350">0</span></b><small>km/h velocidad punta</small></div>
+        <div><b>&gt;<span class="count" data-to="350">0</span></b><small>km/h top speed</small></div>
       </div>
     </div>
     <div class="hex-wrap" data-a="zoom" style="--d:200">
@@ -334,39 +334,39 @@ header>*{pointer-events:auto}
         <polygon points="200,64 313,132 313,268 200,336 87,268 87,132" stroke-width="3"/>
       </svg>
       <div class="hex-img" style="background-image:url(img/35497785.jpg)"></div>
-      <div class="hex-c"><div><b><span class="count" data-to="12">0</span></b><small>cilindros</small></div></div>
+      <div class="hex-c"><div><b><span class="count" data-to="12">0</span></b><small>cylinders</small></div></div>
     </div>
   </div>
 </section>
 
 <!-- 6 COMPARE -->
-<section class="slide" id="s6" data-title="Comparativa">
-  <div class="eyebrow" data-a>Cara a cara</div>
-  <h2 class="big" data-a style="font-size:clamp(50px,8vw,130px);--d:100">Potencia <span style="color:var(--gold)">bruta</span></h2>
+<section class="slide" id="s6" data-title="Compare">
+  <div class="eyebrow" data-a>Head to head</div>
+  <h2 class="big" data-a style="font-size:clamp(50px,8vw,130px);--d:100">Raw <span style="color:var(--gold)">power</span></h2>
   <div class="seg" id="seg" data-a style="--d:200"></div>
   <div class="bars" id="bars"></div>
 </section>
 
 <!-- 7 GALLERY -->
-<section class="slide" id="s7" data-title="Galería">
+<section class="slide" id="s7" data-title="Gallery">
   <div class="eyebrow" data-a>Lamborghini World</div>
-  <h2 class="big" style="font-size:clamp(46px,7vw,110px)" data-a style="--d:100">Detalles que <span style="color:var(--gold)">definen</span></h2>
+  <h2 class="big" style="font-size:clamp(46px,7vw,110px)" data-a style="--d:100">Details that <span style="color:var(--gold)">define</span></h2>
   <div class="cards">
-    <button class="card" data-a style="--d:200" data-img="img/12905852.jpg"><div class="im"><img src="img/12905852.jpg" alt=""></div><span class="tg">Aventador</span><small>Aerodinámica</small><h3>El arte de la velocidad: difusor, escapes y carbono</h3></button>
-    <button class="card" data-a style="--d:320" data-img="img/37147620.jpg"><div class="im"><img src="img/37147620.jpg" alt=""></div><span class="tg">Interior</span><small>Ad personam</small><h3>Piel, costuras hexagonales y un toro bordado</h3></button>
-    <button class="card" data-a style="--d:440" data-img="img/30272185.jpg"><div class="im"><img src="img/30272185.jpg" alt=""></div><span class="tg">V12</span><small>Ingeniería</small><h3>El corazón a la vista bajo la cubierta del motor</h3></button>
+    <button class="card" data-a style="--d:200" data-img="img/12905852.jpg"><div class="im"><img src="img/12905852.jpg" alt=""></div><span class="tg">Aventador</span><small>Aerodynamics</small><h3>The art of speed: diffuser, exhausts and carbon</h3></button>
+    <button class="card" data-a style="--d:320" data-img="img/37147620.jpg"><div class="im"><img src="img/37147620.jpg" alt=""></div><span class="tg">Interior</span><small>Ad personam</small><h3>Leather, hexagonal stitching and an embroidered bull</h3></button>
+    <button class="card" data-a style="--d:440" data-img="img/30272185.jpg"><div class="im"><img src="img/30272185.jpg" alt=""></div><span class="tg">V12</span><small>Engineering</small><h3>The heart on display under the engine cover</h3></button>
   </div>
 </section>
 
 <!-- 8 CLOSE -->
-<section class="slide" id="s8" data-title="Final">
+<section class="slide" id="s8" data-title="End">
   <div class="cbg"></div>
   <div class="eyebrow" data-a>Expect the unexpected</div>
-  <h1 data-a style="--d:150">Vive la<br><span style="color:var(--gold)">experiencia</span></h1>
-  <p class="lead" style="margin:2rem 0" data-a style="--d:300">Seis décadas convirtiendo lo imposible en algo que se puede conducir.</p>
+  <h1 data-a style="--d:150">Live the<br><span style="color:var(--gold)">experience</span></h1>
+  <p class="lead" style="margin:2rem 0" data-a style="--d:300">Six decades turning the impossible into something you can drive.</p>
   <div class="row" data-a style="--d:400">
-    <button class="cta gold" onclick="go(0)">Volver al inicio</button>
-    <button class="cta ghost" onclick="go(3)">Repetir aceleración</button>
+    <button class="cta gold" onclick="go(0)">Back to start</button>
+    <button class="cta ghost" onclick="go(3)">Run it again</button>
   </div>
 </section>
 </main>
@@ -444,12 +444,12 @@ addEventListener('resize',rs);rs();
 })();
 /* ---------- 2. timeline ---------- */
 const TL=[
- {y:1963,n:'350 GT',hp:280,v:250,e:'V12',t:'El primer Lamborghini de producción. Ferruccio decide construir el gran turismo perfecto y nace una marca.'},
- {y:1966,n:'Miura',hp:350,v:280,e:'V12',t:'Motor central transversal. Nace el concepto de superdeportivo tal como lo conocemos hoy.'},
- {y:1974,n:'Countach',hp:375,v:300,e:'V12',t:'Líneas de cuña y puertas de tijera. El póster que definió a una generación entera.'},
- {y:1990,n:'Diablo',hp:492,v:325,e:'V12',t:'El primer Lamborghini en superar los 320 km/h. Una bestia analógica en estado puro.'},
- {y:2011,n:'Aventador',hp:700,v:350,e:'V12',t:'Chasis monocasco de fibra de carbono y un V12 atmosférico de 6,5 litros.'},
- {y:2023,n:'Revuelto',hp:1015,v:350,e:'V12 HPEV',t:'El primer superdeportivo híbrido enchufable V12 de la marca. Un nuevo capítulo.'}
+ {y:1963,n:'350 GT',hp:280,v:250,e:'V12',t:'The first production Lamborghini. Ferruccio sets out to build the perfect grand tourer, and a brand is born.'},
+ {y:1966,n:'Miura',hp:350,v:280,e:'V12',t:'Transverse mid-engine layout. The supercar as we know it today is born.'},
+ {y:1974,n:'Countach',hp:375,v:300,e:'V12',t:'Wedge lines and scissor doors. The poster car that defined an entire generation.'},
+ {y:1990,n:'Diablo',hp:492,v:325,e:'V12',t:'The first Lamborghini to top 320 km/h. A pure, analogue beast.'},
+ {y:2011,n:'Aventador',hp:700,v:350,e:'V12',t:'A carbon-fibre monocoque and a naturally aspirated 6.5-litre V12.'},
+ {y:2023,n:'Revuelto',hp:1015,v:350,e:'V12 HPEV',t:'The brand\'s first plug-in hybrid V12 supercar. A new chapter.'}
 ];
 const tl=$('#tl');let tlI=0;
 TL.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d.y;b.onclick=()=>setTl(i);tl.appendChild(b)});
@@ -494,10 +494,10 @@ addEventListener('mousemove',e=>{
 
 /* ---------- 3. models ---------- */
 const MODELS=[
- {n:'Revuelto',tag:'V12 híbrido enchufable',img:'31565014',s:[['1.015','CV'],['2,5 s','0–100'],['350+','km/h'],['V12','HPEV']]},
- {n:'Huracán',tag:'V10 atmosférico',img:'17632050',s:[['640','CV'],['3,2 s','0–100'],['325','km/h'],['V10','5,2 L']]},
- {n:'Urus',tag:'Súper SUV',img:'17564913',s:[['800','CV'],['3,4 s','0–100'],['312','km/h'],['V8','Híbrido enchufable']]},
- {n:'Aventador',tag:'El último V12 atmosférico',img:'35113533',s:[['750','CV'],['2,8 s','0–100'],['350','km/h'],['V12','6,5 L']]}
+ {n:'Revuelto',tag:'Plug-in hybrid V12',img:'31565014',s:[['1,015','HP'],['2.5 s','0–100'],['350+','km/h'],['V12','HPEV']]},
+ {n:'Huracán',tag:'Naturally aspirated V10',img:'17632050',s:[['640','HP'],['3.2 s','0–100'],['325','km/h'],['V10','5.2 L']]},
+ {n:'Urus',tag:'Super SUV',img:'17564913',s:[['800','HP'],['3.4 s','0–100'],['312','km/h'],['V8','Plug-in hybrid']]},
+ {n:'Aventador',tag:'The last naturally aspirated V12',img:'35113533',s:[['750','HP'],['2.8 s','0–100'],['350','km/h'],['V12','6.5 L']]}
 ];
 let mi=0;
 MODELS.forEach((m,i)=>{
@@ -542,13 +542,13 @@ function resetGauge(){paint(0);$('#stopw').textContent='0.00 s'}
 /* ---------- engine audio (WebAudio synth, one voice per model) ---------- */
 let audio=null,eng=null,soundOn=true;
 const SND={
-  Revuelto:{cyl:12,idle:900,red:9400,tops:[80,125,170,220,280,350],saw:1,sq:.15,sub:.25,dist:2.5,cut:5200,whine:1,turbo:0,burble:0,noise:.05,vol:.2,label:'V12 híbrido + motor eléctrico'},
-  'Huracán':{cyl:10,idle:1000,red:8500,tops:[75,115,160,205,255,325],saw:.7,sq:.7,sub:.15,dist:4,cut:6200,whine:0,turbo:0,burble:.15,noise:.08,vol:.2,label:'V10 atmosférico'},
+  Revuelto:{cyl:12,idle:900,red:9400,tops:[80,125,170,220,280,350],saw:1,sq:.15,sub:.25,dist:2.5,cut:5200,whine:1,turbo:0,burble:0,noise:.05,vol:.2,label:'Hybrid V12 + electric motor'},
+  'Huracán':{cyl:10,idle:1000,red:8500,tops:[75,115,160,205,255,325],saw:.7,sq:.7,sub:.15,dist:4,cut:6200,whine:0,turbo:0,burble:.15,noise:.08,vol:.2,label:'Naturally aspirated V10'},
   Urus:{cyl:8,idle:750,red:6800,tops:[70,110,155,200,250,312],saw:.9,sq:.3,sub:.9,dist:3,cut:2400,whine:0,turbo:1,burble:1,noise:.07,vol:.24,label:'V8 biturbo'},
-  Aventador:{cyl:12,idle:850,red:8500,tops:[75,120,165,215,270,350],saw:1,sq:.5,sub:.4,dist:6,cut:4200,whine:0,turbo:0,burble:.25,noise:.1,vol:.2,label:'V12 atmosférico'}
+  Aventador:{cyl:12,idle:850,red:8500,tops:[75,120,165,215,270,350],saw:1,sq:.5,sub:.4,dist:6,cut:4200,whine:0,turbo:0,burble:.25,noise:.1,vol:.2,label:'Naturally aspirated V12'}
 };
-$('#snd').onclick=()=>{soundOn=!soundOn;$('#snd').classList.toggle('on',soundOn);$('#snd').textContent=soundOn?'🔊 Sonido activado':'🔇 Sonido apagado';if(!soundOn)stopAudio()};
-$('#snd').classList.add('on');$('#snd').textContent='🔊 Sonido activado';
+$('#snd').onclick=()=>{soundOn=!soundOn;$('#snd').classList.toggle('on',soundOn);$('#snd').textContent=soundOn?'🔊 Sound on':'🔇 Sound off';if(!soundOn)stopAudio()};
+$('#snd').classList.add('on');$('#snd').textContent='🔊 Sound on';
 function curve(k){const n=1024,c=new Float32Array(n);for(let i=0;i<n;i++){const x=i*2/n-1;c[i]=Math.tanh(x*k)}return c}
 function noiseBuf(ac){const b=ac.createBuffer(1,ac.sampleRate*2,ac.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;return b}
 function startAudio(name){
@@ -614,10 +614,10 @@ function stopAudio(){
     oscs.forEach(x=>x.o.frequency.setTargetAtTime(Math.max(30,e.p.idle/60*e.p.cyl/2*x.mult),t,.25));
     setTimeout(()=>{try{oscs.forEach(x=>x.o.stop());ns.stop();lfo&&lfo.stop();wo&&wo.stop()}catch(_){}},700)}catch(_){}
 }
-function stopLaunch(){if(run){cancelAnimationFrame(run);run=null}stopAudio();$('#go').textContent='Lanzar ▸'}
+function stopLaunch(){if(run){cancelAnimationFrame(run);run=null}stopAudio();$('#go').textContent='Launch ▸'}
 $('#go').onclick=()=>{
   if(run){stopLaunch();return}
-  const c=CARS[sel];resetGauge();startAudio(sel);$('#go').textContent='■ Detener';
+  const c=CARS[sel];resetGauge();startAudio(sel);$('#go').textContent='■ Stop';
   const t0=performance.now()+400;let hit=false;   /* short ignition delay before launch */
   (function f(now){
     const t=Math.max(0,(now-t0)/1000),v=speedAt(t,c);
@@ -625,7 +625,7 @@ $('#go').onclick=()=>{
     if(!hit){$('#stopw').textContent=t.toFixed(2)+' s'}
     if(!hit&&v>=100){hit=true;$('#stopw').textContent=c.t100.toFixed(2)+' s ✓'}
     if(now>=t0)driveAudio(v);
-    if(t>=c.tv){paint(c.vmax);stopLaunch();$('#go').textContent='Repetir ▸';return}
+    if(t>=c.tv){paint(c.vmax);stopLaunch();$('#go').textContent='Again ▸';return}
     run=requestAnimationFrame(f);
   })(performance.now());
 };
@@ -636,8 +636,8 @@ setHero(0);resetGauge();
 
 /* ---------- 6. compare ---------- */
 const CMP={
- 'Potencia (CV)':{u:'',d:[['Revuelto',1015],['Temerario',920],['Urus SE',800],['Aventador',700],['Diablo',492],['Countach',375],['Miura',350]]},
- 'Vel. máx. (km/h)':{u:'',d:[['Revuelto',350],['Aventador',350],['Temerario',343],['Diablo',325],['Urus SE',312],['Countach',300],['Miura',280]]}
+ 'Power (HP)':{u:'',d:[['Revuelto',1015],['Temerario',920],['Urus SE',800],['Aventador',700],['Diablo',492],['Countach',375],['Miura',350]]},
+ 'Top speed (km/h)':{u:'',d:[['Revuelto',350],['Aventador',350],['Temerario',343],['Diablo',325],['Urus SE',312],['Countach',300],['Miura',280]]}
 };
 function drawBars(k){
   const {d}=CMP[k],mx=Math.max(...d.map(x=>x[1]));
@@ -646,7 +646,7 @@ function drawBars(k){
   requestAnimationFrame(()=>{$$('#bars .f').forEach(f=>{f.style.width='0'});requestAnimationFrame(()=>$$('#bars .f').forEach(f=>f.style.width=f.style.getPropertyValue('--w')))});
 }
 Object.keys(CMP).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>drawBars(k);$('#seg').appendChild(b)});
-drawBars('Potencia (CV)');
+drawBars('Power (HP)');
 
 /* ---------- boot ---------- */
 const q=parseInt(new URLSearchParams(location.search).get('slide'),10);
