@@ -222,6 +222,8 @@ header>*{pointer-events:auto}
 #s8{align-items:flex-start;text-align:left;justify-content:center}
 #s8 h1{font-size:clamp(60px,12vw,210px)}
 @media(max-width:820px){.cards{grid-template-columns:1fr}.mc{left:8%;width:84%}.mc[data-p="1"],.mc[data-p="-1"]{opacity:0}.st3{height:32vh}}
+.disc{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:25;max-width:min(90vw,640px);text-align:center;font-size:10px;line-height:1.4;letter-spacing:.06em;color:#b9b5ab;text-shadow:0 1px 6px #000;pointer-events:none}
+@media(max-width:820px){.disc{bottom:6px;font-size:9px}.pager,.hint{display:none}}
 </style>
 </head>
 <body>
@@ -235,6 +237,7 @@ header>*{pointer-events:auto}
 <div id="rail"></div>
 <div class="pager"><b id="pn">01</b> / <span id="pt">07</span></div>
 <div class="hint">← → · rueda · deslizar</div>
+<div class="disc">Personal project by Reasoned Web. Not an official work and not affiliated with, authorized or endorsed by Automobili Lamborghini S.p.A. All trademarks belong to their respective owners. Photos via Pexels.</div>
 <div id="bar"></div>
 
 <div id="lb"><img alt=""></div>
